@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ikartikgautam"
+    }
+  },
+  "defaultProject": "ikartikgautam",
+  "cli": {
+    "analytics": "027d99c7-f04b-4980-acc7-9016e7386369"
+  }
 }

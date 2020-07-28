@@ -1,0 +1,11 @@
+.inner-div {
+    margin: auto;
+    width: fit-content;
+    width: -moz-fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+.inner-div span{
+    margin-left: 12px;
+    margin-right: 12px;
+}

@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+.welcome-text {
+    line-height: 101px;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 9px;
+    font-size: 96px;
+    margin: 0;
+    color: white;
+    // to align text
+    display: block;
+    margin: auto;
+    width: fit-content;
+    // for animations
+    opacity: 0;
+    animation-name: fade-appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes fade-appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.odd-hilight {
+    color: greenyellow;
+}
+
+.background {
+    height: 92vh;
+    width: 100vw;
+    background-image: url("../../assets/Photos/LND_AEA98EB0-0885-4D05-8D14-44532DB802E3.jpg");
+    background-position: center;
+    background-size: cover;
+}
