@@ -1,0 +1,31 @@
+.icon-theme {
+    color: white;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 30px;
+    font-size: 2em;
+    transition-duration: 0.3s;
+}
+.icon-theme:hover {
+    color: yellowgreen;
+    // margin-bottom: 16px;
+}
+.lie::after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 90px;
+    background-color: white;
+    margin: 0px auto;
+    transition-duration: 0.3px;
+    // display: block;
+    // width: fit-content;
+}
+i {
+    margin: 8px auto !important;
+    display: block;
+    width: fit-content;
+}
+i:hover{
+    margin: 10px auto!important;
+}

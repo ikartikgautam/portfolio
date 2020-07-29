@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
 .inner-div {
     margin: auto;
     width: fit-content;
@@ -5,7 +7,26 @@
     display: flex;
     justify-content: space-between;
 }
-.inner-div span{
+// .inner-div span {
+//     color: white;
+//     margin-left: 12px;
+//     margin-right: 12px;
+//     font-family: "Black Han Sans", sans-serif;
+//     transition-duration: 0.3s;
+//     cursor: pointer;
+// }
+
+.text-span {
+    color: white;
     margin-left: 12px;
     margin-right: 12px;
+    font-family: "Black Han Sans", sans-serif;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.text-span:hover {
+    color: greenyellow;
+    margin-left: 30px;
+    margin-right: 30px;
 }

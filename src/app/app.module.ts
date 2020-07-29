@@ -7,6 +7,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { FooterBarComponent } from './footer-bar/footer-bar.component';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
+import { SocialTrayComponent } from './social-tray/social-tray.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ErrorComponent } from './error/error.component';
     TopBarComponent,
     FooterBarComponent,
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    SocialTrayComponent
   ],
   imports: [
     BrowserModule,

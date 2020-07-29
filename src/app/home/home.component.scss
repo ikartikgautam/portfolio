@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 .welcome-text {
     line-height: 101px;
@@ -7,6 +8,7 @@
     font-size: 96px;
     margin: 0;
     color: white;
+    text-shadow: 2px 0px 20px black;
     // to align text
     display: block;
     margin: auto;
@@ -32,8 +34,40 @@
 
 .background {
     height: 92vh;
-    width: 100vw;
+    width: 100%;
     background-image: url("../../assets/Photos/LND_AEA98EB0-0885-4D05-8D14-44532DB802E3.jpg");
     background-position: center;
     background-size: cover;
+
+    display: flex;
+    flex-direction: column;
 }
+.bottom-text {
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 2px 0px 20px black;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 70px;
+}
+
+.bottom-icon {
+    width: max-content;
+    color: white;
+    font-size: 40px;
+    margin: 16px auto;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // animation
+    transition-duration: 0.3s;
+    
+}
+.bottom-icon:hover {
+    font-size: 50px;
+    color: greenyellow;
+}
+
