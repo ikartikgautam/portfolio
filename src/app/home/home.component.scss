@@ -1,6 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+$theme: greenyellow;
+
+/* ANIMATIONS */
+@keyframes fade-appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* STYLING CODE STARTS HERE */
 .welcome-text {
     line-height: 101px;
     font-family: "Anton", sans-serif;
@@ -19,17 +32,9 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
-@keyframes fade-appear {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 .odd-hilight {
-    color: greenyellow;
+    color: $theme;
 }
 
 .background {
@@ -50,6 +55,10 @@
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 70px;
+    transition: 0.3;
+}
+.bottom-text:hover {
+    color: $theme;
 }
 
 .bottom-icon {
@@ -64,10 +73,15 @@
     right: 0;
     // animation
     transition-duration: 0.3s;
-    
 }
 .bottom-icon:hover {
     font-size: 50px;
-    color: greenyellow;
+    color: $theme;
 }
-
+.hey {
+    color: $theme;
+    font-family: monospace;
+    font-size: 46px;
+    line-height: 0px;
+    letter-spacing: 0;
+}

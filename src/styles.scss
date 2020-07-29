@@ -1,4 +1,23 @@
+$theme: yellowgreen;
 /* You can add global styles to this file, and also import other style files */
-body{
+body {
     margin: 0px;
+}
+
+// styles for scrollbar
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(133, 133, 133);
+}
+
+::-webkit-scrollbar-thumb {
+    background: $theme;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(116, 155, 37);
 }
