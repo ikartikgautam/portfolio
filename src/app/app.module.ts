@@ -8,6 +8,7 @@ import { FooterBarComponent } from './footer-bar/footer-bar.component';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
 import { SocialTrayComponent } from './social-tray/social-tray.component';
+import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SocialTrayComponent } from './social-tray/social-tray.component';
     FooterBarComponent,
     HomeComponent,
     ErrorComponent,
-    SocialTrayComponent
+    SocialTrayComponent,
+    SplashScreenComponent
   ],
   imports: [
     BrowserModule,
