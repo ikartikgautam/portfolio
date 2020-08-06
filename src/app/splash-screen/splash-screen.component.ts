@@ -10,6 +10,12 @@ export class SplashScreenComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    var splash = document.getElementById("splash");
+    setTimeout(() => {
+      splash.classList.add("remove-splash")
+    }, 2000);
+    
   }
 
 }
