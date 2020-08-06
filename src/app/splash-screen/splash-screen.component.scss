@@ -1,12 +1,13 @@
 .remove-splash {
     animation-name: shutterUp;
+    animation-delay: 0s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 .splash {
     width: 100%;
     height: 100vh;
-    background-color: whitesmoke;
+    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -14,7 +15,35 @@
     flex-direction: column;
 }
 
-@keyframes shutterUp{
-    from{top: 0;}
-    to{top: -100%;}
+@keyframes shutterUp {
+    from {
+        top: 0;
+    }
+    to {
+        top: -100%;
+    }
+}
+
+.loader-progress {
+    background-color: greenyellow;
+    animation-name: run-progress;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition: 2s;
+    height: 100%;
+}
+@keyframes run-progress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.loader {
+    background-color: grey;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 10px;
 }
