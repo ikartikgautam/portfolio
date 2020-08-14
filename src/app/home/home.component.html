@@ -46,35 +46,52 @@
     </div>
     <div style="flex: 1;"></div>
 </div>
-<!-- 2nd part -->
+<!-- 3rd part -->
 <div class="page-two">
     <div style="flex: 1;"></div>
     <div style="display: flex;backdrop-filter: saturate(0);">
         <div style="flex: 1;"></div>
         <div>
-            <h1 style="font-size: 4em;" class="font-one">PROFESSIONAL</h1>
-            <h2 style="font-size: 3em;" class="font-one">MY KNOWLEDGE LEVEL IN SOFTWARE</h2>
-            <!-- <ul>
-                <li>PYTHON</li>
-                <li>C</li>
-                <li>C++</li>
-                <li>JAVA</li>
-                <li>JAVASCRIPT</li>
-                <li>TYPESCRIPT</li>
-            </ul> -->
-            <div class="flex-column">
+            <h1 style="font-size: 4em;" class="font-one">TECHNICAL</h1>
+            <h2 style="font-size: 3em;" class="font-one">MY KNOWLEDGE LEVEL IN CODING</h2>
+            <div class="flex-column" style="padding-bottom: 40px;">
                 <div style="flex: 1;"></div>
-                <div style="display: flex;" id="skills">
-                    <div style="margin-right: 24px;">
-                        <div *ngFor="let e of skills">{{e.skill}}</div>
-                    </div>
-                    <div style="width: 100%;">
-                        <div *ngFor="let e of skills" style="width: 100%; height: 15px; margin: 4px;">
-                            <div style="background-color: aqua; height: 100%;" [ngStyle]="{'width':e.pro}">
-
-                            </div>
+                <div style="display: flex; flex-direction: column;" id="skills">
+                    <div style="display: flex;" *ngFor="let e of skills">
+                        <div style="width: 150px;">{{e.skill}}</div>
+                        <div style="width: 100%; height: 15px; margin: 4px; display: flex; background-color: grey;">
+                            <div style="background-color: aqua; height: 100%;" [ngStyle]="{'width':e.pro}"></div><span
+                                style="font-size: 15px;margin: 0;padding: 0;margin-left:12px;line-height: 13px;">{{e.pro}}</span>
                         </div>
                     </div>
+
+                </div>
+                <div style="flex: 1;"></div>
+            </div>
+        </div>
+        <div style="flex: 1;"></div>
+    </div>
+    <div style="flex: 1;"></div>
+</div>
+<!-- 3rd part -->
+<div class="page-three">
+    <div style="flex: 1;"></div>
+    <div style="display: flex;backdrop-filter: blur(20px) saturate(0.2);">
+        <div style="flex: 1;"></div>
+        <div>
+            <h1 style="font-size: 4em;" class="font-one">PROFESSIONAL</h1>
+            <h2 style="font-size: 3em;" class="font-one">TECHNOLOGIES I AM FAMILIAR WITH</h2>
+            <div class="flex-column" style="padding-bottom: 40px;">
+                <div style="flex: 1;"></div>
+                <div style="display: flex; flex-direction: column;" id="skills">
+                    <div style="display: flex;" *ngFor="let e of techs">
+                        <div style="width: 150px;">{{e.skill}}</div>
+                        <div style="width: 100%; height: 15px; margin: 4px; display: flex; background-color: grey;">
+                            <div style="background-color: aqua; height: 100%;" [ngStyle]="{'width':e.pro}"></div><span
+                                style="font-size: 15px;margin: 0;padding: 0;margin-left:12px;line-height: 13px;">{{e.pro}}</span>
+                        </div>
+                    </div>
+
                 </div>
                 <div style="flex: 1;"></div>
             </div>

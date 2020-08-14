@@ -116,3 +116,13 @@ li {
 .font-one{
     font-family: "Open Sans", sans-serif;
 }
+.page-three {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../..//assets/techno.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
