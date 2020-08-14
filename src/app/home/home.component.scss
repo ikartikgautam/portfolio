@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 $theme: greenyellow;
+$textColor: white;
 
 /* ANIMATIONS */
 @keyframes fade-appear {
@@ -14,6 +15,15 @@ $theme: greenyellow;
 }
 
 /* STYLING CODE STARTS HERE */
+h1,
+p,
+h2,
+h3,
+h4,
+ul,
+li {
+    color: $textColor;
+}
 .welcome-text {
     line-height: 101px;
     font-family: "Anton", sans-serif;
@@ -84,4 +94,25 @@ $theme: greenyellow;
     font-size: 46px;
     line-height: 0px;
     letter-spacing: 0;
+}
+.page-two {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../..//assets/prof.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+#skills div {
+    color: $textColor;
+    font-family: "Open Sans", sans-serif;
+}
+.font-one{
+    font-family: "Open Sans", sans-serif;
 }

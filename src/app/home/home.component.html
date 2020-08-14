@@ -26,8 +26,8 @@
 <div style="height: 100vh; width: 100%; background-color: black; display: flex; flex-direction: column;">
     <div style="flex: 1;"></div>
     <div style="padding: 20%;">
-        <h1 style="color: white; margin: 0;">About Me</h1>
-        <h3 style="color: whitesmoke; text-align: justify;">
+        <h1 style="margin: 0;" class="font-one">About Me</h1>
+        <h3 style="text-align: justify;" class="font-one">
             Hello, I am Kartik Gautam, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu ornare lectus,
             sit amet finibus quam. Nullam nec nulla finibus, interdum risus non, fermentum purus. Integer in mi sed
             lacus venenatis scelerisque eu sit amet tortor. Vivamus purus tellus, dapibus a maximus sed, elementum
@@ -43,6 +43,43 @@
             ligula risus, interdum quis dolor sed, euismod finibus arcu. Donec rutrum ex nec ornare vulputate.
             Suspendisse lacinia posuere lectus, et varius augue vestibulum vitae. Donec sodales vel ante ut consectetur.
         </h3>
+    </div>
+    <div style="flex: 1;"></div>
+</div>
+<!-- 2nd part -->
+<div class="page-two">
+    <div style="flex: 1;"></div>
+    <div style="display: flex;backdrop-filter: saturate(0);">
+        <div style="flex: 1;"></div>
+        <div>
+            <h1 style="font-size: 4em;" class="font-one">PROFESSIONAL</h1>
+            <h2 style="font-size: 3em;" class="font-one">MY KNOWLEDGE LEVEL IN SOFTWARE</h2>
+            <!-- <ul>
+                <li>PYTHON</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>JAVA</li>
+                <li>JAVASCRIPT</li>
+                <li>TYPESCRIPT</li>
+            </ul> -->
+            <div class="flex-column">
+                <div style="flex: 1;"></div>
+                <div style="display: flex;" id="skills">
+                    <div style="margin-right: 24px;">
+                        <div *ngFor="let e of skills">{{e.skill}}</div>
+                    </div>
+                    <div style="width: 100%;">
+                        <div *ngFor="let e of skills" style="width: 100%; height: 15px; margin: 4px;">
+                            <div style="background-color: aqua; height: 100%;" [ngStyle]="{'width':e.pro}">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="flex: 1;"></div>
+            </div>
+        </div>
+        <div style="flex: 1;"></div>
     </div>
     <div style="flex: 1;"></div>
 </div>
