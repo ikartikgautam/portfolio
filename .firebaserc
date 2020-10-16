@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "ikartikgautam-56791"
+  },
+  "targets": {
+    "ikartikgautam-56791": {
+      "hosting": {
+        "dev": [
+          "ikartikgautam-56791"
+        ],
+        "prod": [
+          "ikartikgautam"
+        ]
+      }
+    }
+  }
+}
